@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style_contect.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="left-container">
+          <div class="left-inner-container">
+            <h2>Let's Chat</h2>
+            <p>
+              Have a question or want to work together? Fill out the form and
+              we'll get back to you as soon as possible. simply want to connect.
+            </p>
+            <br />
+            <p>Feel free to send me a message in the contact form</p>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="right-inner-container">
+            <form action="#">
+              <h2 class="lg-view">Contact</h2>
+              <h2 class="sm-view">Let's Chat</h2>
+              <p>* Required</p>
+              <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+                <a href="#" class="social"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+              <input type="text" placeholder="Name *" />
+              <input type="email" placeholder="Email *" />
+              <input type="phone" placeholder="Phone" />
+              <textarea rows="4" placeholder="Message"></textarea>
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const form = document.querySelector("form");
+      
+          form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const nameInput = document.querySelector('input[type="text"]');
+            const emailInput = document.querySelector('input[type="email"]');
+            const phoneInput = document.querySelector('input[type="phone"]');
+            const messageInput = document.querySelector('textarea');
+            const nameValue = nameInput.value.trim();
+            const emailValue = emailInput.value.trim();
+            const phoneValue = phoneInput.value.trim();
+            const messageValue = messageInput.value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+            if (nameValue === "") {
+              alert("Please enter your name.");
+              nameInput.focus();
+              return;
+            }
+      
+            if (emailValue === "") {
+              alert("Please enter your email address.");
+              emailInput.focus();
+              return;
+            }
+      
+            if (!emailPattern.test(emailValue)) {
+              alert("Please enter a valid email address.");
+              emailInput.focus();
+              return;
+            }
+      
+            // Perform additional validation if needed
+      
+            // If all validation passes, you can submit the form here
+            // form.submit();
+            
+            // Clear the form fields
+            form.reset();
+            alert("Form submitted successfully!");
+          });
+        });
+      </script>
+      
+  </body>
+</html>

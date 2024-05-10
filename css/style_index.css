@@ -1,0 +1,147 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%; /* Set container height to 100% */
+}
+
+.lakda {
+    background-color: #6F3A1F;
+    height: 100%; /* Set background height to 100% */
+}
+
+.left {
+    margin-left: 40px;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%; /* Set left side height to 100% */
+}
+
+.right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    height: 100%; /* Set right side height to 100% */
+}
+
+#hadding {
+    margin: 0;
+    font-size: 70px;
+}
+
+#content {
+    font-size: 45px;
+}
+
+#foot {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.mini-picture {
+    width: calc(40% - 10px);
+    margin: 2px;
+    height: auto;
+}
+
+.mini-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.mini-picture:first-child,
+.mini-picture:nth-last-child(2) {
+    transition: none;
+}
+
+.mini-picture:not(:first-child):not(:nth-last-child(2)):hover {
+    transform: scale(1.1);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.tricircle1 {
+    border-radius: 200% 0 0 0;
+}
+
+.tricircle2 {
+    border-radius: 0 200% 0 0
+}
+
+.tricircle3 {
+    border-radius: 0 0 0 200%;
+}
+
+.cssbuttons-io-button {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #c773ff;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #c16ef9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+button {
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+}
