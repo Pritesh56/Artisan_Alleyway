@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two-column Layout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: #6F3A1F;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+
+  .left {
+    flex: 1;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .left img {
+    width: 250px;
+    height: 250px;
+    margin: 3px;
+
+  }
+
+  .right {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    padding-right: 45px;
+    height: 100vh;
+    padding-top: 130px;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  p {
+    color: #666;
+  }
+ .left-1 {
+    width: 255px;
+    margin: 3px;
+ }
+ .round{
+    border-radius: 50%;
+ }
+ .triround{
+    border-radius: 0 0 200% 0;
+ }
+ .triround2{
+    border-radius: 200% 0 0 0;
+ }
+ h1{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 40px;
+ }
+
+ h3{
+    color: white;
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: 500;
+ }
+ p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins';
+
+ }
+ .social-icons{
+    margin-top: 35px;
+    margin-bottom: 35px;
+ }
+ .social-icons a{
+    color: white;
+    padding-right: 20px;
+ }
+ .social-icons a:hover{
+    color: #C269FF;
+ }
+ .social-icons a i{
+    font-size: 25px;
+ }
+ button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  button:hover {
+    letter-spacing: 3px;
+    background-color: #C269FF;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #C269FF 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: #bc69ff;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #C269FF 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  button a{
+    text-decoration: none;
+  }
+  
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <div class="left-1">
+      <img src="./images/663e5da2e0cfb_download.jpg" alt="Image 1" class="round">
+      <img src="./images/contact2 Cropped.png" alt="Image 2" class="triround">
+    </div>
+    <div class="left-1">
+      <img src="./images/wcolor.png" alt="Image 3" class="triround2">
+      <img src="./images/p3color.png" alt="Image 4" class="round">
+    </div>
+  </div>
+  <div class="right">
+    <h1>Contact Us</h1>
+    <h3>Your journey begins with a single step. Let's make it remarkable together.
+    </h3>
+    <p>
+      Add your location<br>
+      123 Anywhere St.,<br>
+      Any City, ST 12345<br>
+      <br>
+      123-456-7890<br>
+      <br>
+      hello@reallygreatsite.com
+      <br>
+    </p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <button><a href="contact2.html">Message</a></button>
+
+  </div>
+</div>
+
+</body>
+</html>
